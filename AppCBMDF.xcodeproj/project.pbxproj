@@ -21,6 +21,11 @@
 		01B1C11929251F8E004DC323 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C11829251F8E004DC323 /* LoginView.swift */; };
 		01B1C11B29251F9F004DC323 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C11A29251F9F004DC323 /* Coordinator.swift */; };
 		01B1C11D29251FAC004DC323 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C11C29251FAC004DC323 /* LoginCoordinator.swift */; };
+		01B1C12529266B08004DC323 /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C12429266B08004DC323 /* UIcolor+.swift */; };
+		01B1C12829267194004DC323 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C12729267194004DC323 /* ButtonDefault.swift */; };
+		01B1C12A29267518004DC323 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C12929267518004DC323 /* LabelDefault.swift */; };
+		01B1C12C29267585004DC323 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C12B29267585004DC323 /* TextFieldDefault.swift */; };
+		01B1C12E292675D9004DC323 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B1C12D292675D9004DC323 /* ImageDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		01B1C11829251F8E004DC323 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		01B1C11A29251F9F004DC323 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		01B1C11C29251FAC004DC323 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		01B1C12429266B08004DC323 /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIcolor+.swift"; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/AppCBMDF/Source/Extensions/UIcolor+.swift"; sourceTree = "<group>"; };
+		01B1C12729267194004DC323 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonDefault.swift; path = ../../../../../../ButtonDefault.swift; sourceTree = "<group>"; };
+		01B1C12929267518004DC323 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LabelDefault.swift; path = ../../../../../../LabelDefault.swift; sourceTree = "<group>"; };
+		01B1C12B29267585004DC323 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextFieldDefault.swift; path = ../../../../../../TextFieldDefault.swift; sourceTree = "<group>"; };
+		01B1C12D292675D9004DC323 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageDefault.swift; path = ../../../../../../ImageDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +119,9 @@
 		01B1C0DF29251BDB004DC323 /* AppCBMDF */ = {
 			isa = PBXGroup;
 			children = (
-				01B1C11529251F62004DC323 /* Controller */,
-				01B1C11429251F4C004DC323 /* Coordinator */,
 				01B1C11329251F42004DC323 /* Resource */,
+				01B1C12229266AAC004DC323 /* Source */,
 				01B1C0F129251BDC004DC323 /* Info.plist */,
-				01B1C0E929251BDB004DC323 /* AppCBMDF.xcdatamodeld */,
 			);
 			path = AppCBMDF;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 				01B1C0E629251BDB004DC323 /* Main.storyboard */,
 				01B1C0EC29251BDC004DC323 /* Assets.xcassets */,
 				01B1C0EE29251BDC004DC323 /* LaunchScreen.storyboard */,
+				01B1C0E929251BDB004DC323 /* AppCBMDF.xcdatamodeld */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -164,6 +173,36 @@
 				01B1C11629251F7F004DC323 /* LoginViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		01B1C12229266AAC004DC323 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				01B1C126292670D2004DC323 /* Infrastructure */,
+				01B1C12329266AB9004DC323 /* Extensions */,
+				01B1C11529251F62004DC323 /* Controller */,
+				01B1C11429251F4C004DC323 /* Coordinator */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		01B1C12329266AB9004DC323 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01B1C12429266B08004DC323 /* UIcolor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		01B1C126292670D2004DC323 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				01B1C12729267194004DC323 /* ButtonDefault.swift */,
+				01B1C12929267518004DC323 /* LabelDefault.swift */,
+				01B1C12B29267585004DC323 /* TextFieldDefault.swift */,
+				01B1C12D292675D9004DC323 /* ImageDefault.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +341,14 @@
 				01B1C0E129251BDB004DC323 /* AppDelegate.swift in Sources */,
 				01B1C0EB29251BDB004DC323 /* AppCBMDF.xcdatamodeld in Sources */,
 				01B1C11729251F80004DC323 /* LoginViewController.swift in Sources */,
+				01B1C12A29267518004DC323 /* LabelDefault.swift in Sources */,
 				01B1C0E329251BDB004DC323 /* SceneDelegate.swift in Sources */,
 				01B1C11D29251FAC004DC323 /* LoginCoordinator.swift in Sources */,
+				01B1C12829267194004DC323 /* ButtonDefault.swift in Sources */,
+				01B1C12529266B08004DC323 /* UIcolor+.swift in Sources */,
+				01B1C12E292675D9004DC323 /* ImageDefault.swift in Sources */,
 				01B1C11B29251F9F004DC323 /* Coordinator.swift in Sources */,
+				01B1C12C29267585004DC323 /* TextFieldDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

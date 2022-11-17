@@ -15,7 +15,7 @@ class LoginView: UIView {
             //chama o frame da superclasse
             super.init(frame: frame)
             // muda a cor de fundo do app para branco
-            self.backgroundColor = .white
+            self.backgroundColor = .viewBackGroundColor
             setupVisualElements()
             
         }
@@ -31,7 +31,7 @@ class LoginView: UIView {
     //cria a função com as propriadades da label no login
     var imageLabel: UILabel = {
         let label = UILabel ()
-        label.textColor = UIColor(red: 0.541, green: 0.541, blue: 0.557, alpha: 1)
+        label.textColor = .textLabelColor
         label.font = UIFont(name: "SFProDisplay-Light", size: 16)
         label.text = "Registre e gerencie as ocorrências do seu IF"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -41,7 +41,7 @@ class LoginView: UIView {
     //cria a função com as propriadades da text no login
     var emailTextField: UITextField = {
         let textField = UITextField ()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        textField.backgroundColor = .textFieldBackGroundColor
         textField.placeholder = "E-mail"
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
@@ -50,7 +50,7 @@ class LoginView: UIView {
     //cria a função com as propriadades da text no login
     var senhaTextField: UITextField = {
         let textField = UITextField ()
-        textField.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        textField.backgroundColor = .textFieldBackGroundColor
         textField.placeholder = "Senha"
         textField.translatesAutoresizingMaskIntoConstraints = false
         
@@ -61,7 +61,7 @@ class LoginView: UIView {
     var buttonLogar: UIButton = {
         let button = UIButton ()
         button.setTitle("LOGAR", for: .normal)
-        button.layer.backgroundColor = UIColor(red: 1, green: 0.584, blue: 0, alpha: 1).cgColor
+        button.backgroundColor = .buttonBackGroundColor
         button.layer.cornerRadius = 7
         button.translatesAutoresizingMaskIntoConstraints = false
         
@@ -72,8 +72,7 @@ class LoginView: UIView {
     var buttonRegistrar: UIButton = {
         let button = UIButton ()
         button.setTitle("REGISTRAR", for: .normal)
-        button.layer.backgroundColor = UIColor(red: 1, green: 0.584, blue: 0, alpha: 1).cgColor
-        button.layer.cornerRadius = 7
+        button.backgroundColor = .buttonBackGroundColor
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
