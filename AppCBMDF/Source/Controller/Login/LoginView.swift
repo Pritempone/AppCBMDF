@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 
 class LoginView: UIView {
-    
-    //Initialize
+    //MARK: - Initialize
         override init(frame: CGRect) {
             //chama o frame da superclasse
             super.init(frame: frame)
@@ -19,12 +18,15 @@ class LoginView: UIView {
             setupVisualElements()
             
         }
+    
+  //MARK: -  Clouseres
+  var onRegisterTap: (() -> Void)?
+    
     //cria a função com as propriadades da imagem no login
     var imageLogin = ImageDefault(image: "ImageLogin")
-    
+       
     //cria a função com as propriadades da label no login
-    
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
+    var imageLabel = LabelDefault(text: "Registre e gerencie suas denúncias:", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
     //cria a função com as propriadades da text no login
     var emailTextField = TextFieldDefault (placeholder: "E-mail")
@@ -37,7 +39,7 @@ class LoginView: UIView {
     
     //cria a função com as propriadades do botão registrar
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
-    
+        
     
     func setupVisualElements() {
         self.addSubview(imageLogin)
@@ -47,13 +49,15 @@ class LoginView: UIView {
         self.addSubview(buttonLogar)
         self.addSubview(buttonRegistrar)
         
+        buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        
         NSLayoutConstraint.activate([
         
             imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
             imageLogin.heightAnchor.constraint(equalToConstant: 82.64),
             imageLogin.topAnchor.constraint(equalTo: self.topAnchor, constant: 228),
-            imageLogin.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
-            imageLogin.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
+            imageLogin.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 57),
+            imageLogin.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -57),
             
             imageLabel.widthAnchor.constraint(equalToConstant: 100),
             imageLabel.topAnchor.constraint(equalTo: imageLogin.bottomAnchor, constant: 5),
@@ -91,5 +95,9 @@ class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Actions
+    @objc
+    private func registerTap(){
+        onRegisterTap?()
+    }
 }
-
