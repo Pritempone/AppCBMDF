@@ -16,6 +16,7 @@
 		0172DD94292D0F9300F9E3D7 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172DD93292D0F9300F9E3D7 /* ViewControllerDefault.swift */; };
 		0172DD96292D139200F9E3D7 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172DD95292D139200F9E3D7 /* ViewDefault.swift */; };
 		0172F78F293F78B400A91F74 /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172F78E293F78B400A91F74 /* UIcolor+.swift */; };
+		0172F792293F7C9A00A91F74 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172F791293F7C9A00A91F74 /* EscolherImagem.swift */; };
 		018E4BC7292F9A0400EFF95C /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018E4BC6292F9A0400EFF95C /* TabbarController.swift */; };
 		018E4BC9292F9A1F00EFF95C /* SobreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018E4BC8292F9A1F00EFF95C /* SobreView.swift */; };
 		018E4BCB292F9A2F00EFF95C /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018E4BCA292F9A2E00EFF95C /* SobreViewController.swift */; };
@@ -71,6 +72,7 @@
 		0172DD93292D0F9300F9E3D7 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		0172DD95292D139200F9E3D7 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		0172F78E293F78B400A91F74 /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+.swift"; sourceTree = "<group>"; };
+		0172F791293F7C9A00A91F74 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 		018E4BC6292F9A0400EFF95C /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		018E4BC8292F9A1F00EFF95C /* SobreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreView.swift; sourceTree = "<group>"; };
 		018E4BCA292F9A2E00EFF95C /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				018E4BCC292F9A4300EFF95C /* NovaOcorrenciaView.swift */,
 				018E4BCE292F9A4F00EFF95C /* NovaOcorrenciaViewController.swift */,
+				0172F791293F7C9A00A91F74 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				0172DD94292D0F9300F9E3D7 /* ViewControllerDefault.swift in Sources */,
 				01B1C0E129251BDB004DC323 /* AppDelegate.swift in Sources */,
 				0172DD86292CF50B00F9E3D7 /* RegisterView.swift in Sources */,
+				0172F792293F7C9A00A91F74 /* EscolherImagem.swift in Sources */,
 				0172F78F293F78B400A91F74 /* UIcolor+.swift in Sources */,
 				018E4BCB292F9A2F00EFF95C /* SobreViewController.swift in Sources */,
 				01B1C0EB29251BDB004DC323 /* AppCBMDF.xcdatamodeld in Sources */,
